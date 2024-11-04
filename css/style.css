@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  }
+
+body{
+  /* google fonts */
+  font-family: "Noto Sans JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ヘッダー */
+
+header{
+  max-width: 980px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+header > a{
+  text-decoration: none;
+}
+
+h1{
+  color: black;
+  font-size: 34px;
+  border: black solid 1px;
+  padding: 0 20px;
+}
+
+.header-link a{
+  text-decoration: none;
+  color: black;
+  font-size: 34px;
+  margin-left: 50px;
+  font-weight: bold;
+}
+
+/* メインビジュアル */
+
+.mainvisual{
+  margin-top: 30px;
+}
+
+/* アバウトセクション */
+
+#about{
+  max-width: 820px;
+  margin: 30px auto 0;
+  /* background-color: aqua; */
+}
+
+/* h2 */
+.section-title{
+  text-align: center;
+  font-size: 34px;
+}
+
+.about-flex{
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.about-image img{
+  border-radius: 50%;
+}
+
+.about-text{
+  margin-left: 100px;
+}
+
+.about-text-list{
+  margin-top: 20px;
+  margin-left: 40px;
+  font-size: 18px;
+}
+
+.about-text h3{
+  font-size: 24px;
+}
+
+/* ワークスセクション */
+
+#works{
+  max-width: 752px;
+  margin: 0 auto;
+  margin-top: 80px;
+  /* background-color: aqua; */
+}
+
+.works-content{
+  display: flex;
+  gap: 2%;
+  margin-top: 40px;
+}
+
+.works-content-div{
+  width: 32%;
+  font-size: 18px;
+}
+
+/* フッター */
+
+footer{
+  text-align: center;
+  font-size: 18px;
+  margin: 40px 0;
+}
+
+/* スマホ幅 */
+@media screen and (max-width: 767px){
+
+  .section-title{
+    font-size: 28px;
+  }
+
+  /* ヘッダー */
+  header{
+    margin: 30px 10px 0;
+  }
+  
+  h1{
+    font-size: 28px;
+  }
+
+  .header-link a{
+    font-size: 21px;
+    margin-left: 15px;
+  }
+
+  /* アバウト */
+  .about-flex{
+    /* display: block; */
+    flex-direction: column;
+  }
+
+  .about-image{
+    text-align: center;
+  }
+
+  .about-text{
+    margin: 0 30px;
+  }
+  
+  /* ワークス */
+  
+  .works-content{
+    flex-direction: column;
+    margin-top: 0;
+  }
+  
+  .works-content-div{
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .works-content-div img{
+    width: 100%;
+  }
+
+  /* フッター */
+  footer{
+    margin: 40px 0 10px ;
+  }
+}
