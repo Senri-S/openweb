@@ -1,0 +1,64 @@
+body{
+  font-size: 6em;
+  text-align: center;
+}
+
+img{
+  width: 100%;
+}
+
+.count{
+  margin: 0;
+  font-weight: bold;
+  color: #888;
+}
+
+.wrap{
+  margin-top: 20px;
+  padding: 50px 40px;
+  background-color: #666;
+  font-weight: bold;
+  color: white;
+}
+
+.typed{
+  color: lightgreen;
+  font-size: 60px;
+}
+
+#untyped{
+  font-size: 60px;
+  display: none;
+}
+
+.mistyped{
+  background-color: red;
+}
+
+#correct{
+  margin: 0;
+  color: lightgreen;
+  font-weight: bold;
+  font-size: 4rem;
+  /* display: none; */
+}
+
+/* 読み仮名の部分 */
+#nihongo{
+  display: block;
+  /* display: none; */
+}
+
+#imageArea{
+  width: 500px;
+  margin-left: 15%;
+  /* background-color: aqua; */
+}
+
+button{
+  padding: 20px 50px;
+  position: relative;
+  top: -60px;
+  /* margin: 0; */
+  /* 意味なかった　ボタンの周りの隙間ってなんなん */
+}
